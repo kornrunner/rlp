@@ -38,9 +38,6 @@ class Str
             if (strpos($input, '0x') === 0) {
                 $input = str_replace('0x', '', $input);
             }
-            if (mb_strlen($input) > 2) {
-                $input = ltrim($input, '0');
-            }
             $output = $input;
 
             break;
