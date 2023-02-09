@@ -1,5 +1,5 @@
 {
-    "name": "web3p/rlp",
+    "name": "kornrunner/rlp",
     "description": "Recursive Length Prefix Encoding in PHP.",
     "type": "library",
     "license": "MIT",
@@ -11,11 +11,11 @@
     ],
     "minimum-stability": "dev",
     "require-dev": {
-        "phpunit/phpunit": "~7|~8.0"
+        "phpunit/phpunit": "~7|~8.0|~9.0"
     },
     "autoload": {
         "psr-4": {
-            "Web3p\\RLP\\": "src/"
+            "kornrunner\\RLP\\": "src/"
         }
     },
     "autoload-dev": {
@@ -24,7 +24,7 @@
         }
     },
     "require": {
-        "PHP": "^7.1 | ^8.0",
+        "PHP": "^7.1 | ^8.0 | ^8.1 | ^8.2",
         "ext-mbstring": "*"
     }
 }

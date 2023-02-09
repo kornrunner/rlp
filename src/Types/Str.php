@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3p\RLP\Types;
+namespace kornrunner\RLP\Types;
 
 use InvalidArgumentException;
 

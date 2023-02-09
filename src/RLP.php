@@ -9,12 +9,12 @@
  * @license MIT
  */
 
-namespace Web3p\RLP;
+namespace kornrunner\RLP;
 
 use InvalidArgumentException;
 use RuntimeException;
-use Web3p\RLP\Types\Str;
-use Web3p\RLP\Types\Numeric;
+use kornrunner\RLP\Types\Str;
+use kornrunner\RLP\Types\Numeric;
 
 /**
  * It's a instance for ethereum recursive length encoding.
@@ -22,7 +22,7 @@ use Web3p\RLP\Types\Numeric;
  * RLP encode:
  * 
  * ```php
- * use Web3p\RLP\RLP;
+ * use kornrunner\RLP\RLP;
 
  * $rlp = new RLP;
  * // c483646f67
@@ -35,8 +35,8 @@ use Web3p\RLP\Types\Numeric;
  * RLP decode:
  * 
  * ```php
- * use Web3p\RLP\RLP;
- * use Web3p\RLP\Types\Str;
+ * use kornrunner\RLP\RLP;
+ * use kornrunner\RLP\Types\Str;
  * 
  * $rlp = new RLP;
  * $encoded = $rlp->encode(['dog']);

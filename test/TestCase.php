@@ -3,7 +3,7 @@
 namespace Test;
 
 use \PHPUnit\Framework\TestCase as BaseTestCase;
-use Web3p\RLP\RLP;
+use kornrunner\RLP\RLP;
 
 class TestCase extends BaseTestCase
 {

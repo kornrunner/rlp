@@ -1,8 +1,4 @@
-# rlp
-
-[![PHP](https://github.com/web3p/rlp/actions/workflows/php.yml/badge.svg)](https://github.com/web3p/rlp/actions/workflows/php.yml)
-[![codecov](https://codecov.io/gh/web3p/rlp/branch/master/graph/badge.svg)](https://codecov.io/gh/web3p/rlp)
-[![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/web3p/rlp/blob/master/LICENSE)
+# rlp [![Tests](https://github.com/kornrunner/rlp/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/kornrunner/rlp/actions/workflows/tests.yml) [![Coverage Status](https://coveralls.io/repos/github/kornrunner/rlp/badge.svg?branch=master)](https://coveralls.io/github/kornrunner/rlp?branch=master) [![Latest Stable Version](https://poser.pugx.org/kornrunner/rlp/v/stable)](https://packagist.org/packages/kornrunner/rlp)
 
 Recursive Length Prefix Encoding in PHP.
 
@@ -10,7 +6,7 @@ Recursive Length Prefix Encoding in PHP.
 
 Set minimum stability to dev
 ```
-composer require web3p/rlp
+composer require kornrunner/rlp
 ```
 
 # Usage
@@ -18,7 +14,7 @@ composer require web3p/rlp
 RLP encode:
 
 ```php
-use Web3p\RLP\RLP;
+use kornrunner\RLP\RLP;
 
 $rlp = new RLP;
 // c483646f67
@@ -31,8 +27,8 @@ $encoded = $rlp->encode('dog');
 RLP decode:
 
 ```php
-use Web3p\RLP\RLP;
-use Web3p\RLP\Types\Str;
+use kornrunner\RLP\RLP;
+use kornrunner\RLP\Types\Str;
 
 $rlp = new RLP;
 $encoded = $rlp->encode(['dog']);
@@ -52,7 +48,7 @@ echo Str::decodeHex($decoded[0]);
 
 # API
 
-### Web3p\RLP\RLP
+### kornrunner\RLP\RLP
 
 #### encode
 
@@ -69,10 +65,10 @@ Mixed inputs - array of string, integer or numeric string.
 * Encode array of string.
 
 ```php
-use Web3p\RLP\RLP;
+use kornrunner\RLP\RLP;
 
 $rlp = new RLP;
-$encoded = $rlp->encode(['web3p', 'ethereum', 'solidity']);
+$encoded = $rlp->encode(['kornrunner', 'ethereum', 'solidity']);
 ```
 
 #### decode
@@ -90,14 +86,14 @@ String input - recursive length prefix encoded string.
 * Decode recursive length prefix encoded string.
 
 ```php
-use Web3p\RLP\RLP;
-use Web3p\RLP\Types\Str;
+use kornrunner\RLP\RLP;
+use kornrunner\RLP\Types\Str;
 
 $rlp = new RLP;
-$encoded = $rlp->encode(['web3p', 'ethereum', 'solidity']);
+$encoded = $rlp->encode(['kornrunner', 'ethereum', 'solidity']);
 $decoded = $rlp->decode('0x' . $encoded);
 
-// echo web3p
+// echo kornrunner
 echo hex2bin($decoded[0]);
 
 // echo ethereum
@@ -113,4 +109,5 @@ echo Str::decodeHex($decoded[2]);
 ```
 
 # License
+
 MIT

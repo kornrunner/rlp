@@ -3,7 +3,7 @@
 namespace Test\Unit;
 
 use Test\TestCase;
-use Web3p\RLP\Types\Str;
+use kornrunner\RLP\Types\Str;
 
 class RLPTest extends TestCase
 {
